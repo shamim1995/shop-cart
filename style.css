@@ -1,0 +1,43 @@
+body {
+    background: darkgrey !important;
+}
+.shopPhone img {
+    width: 200px;
+}
+.iphoneTitle h2 {
+    margin-top: 80px;
+}
+.shopPhone img {
+    height: 200px;
+}
+
+.iphoneIncreasing {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 86px;
+}
+.phoneQunatity {
+    width: 40px !important;
+    margin: 0px 20px;
+    margin-top: -13px;
+}
+h2.phonePrice {
+    margin: 0px 25px;
+    margin-top: -13px;
+}
+.iphoneSection {
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px 0px #ddd;
+    margin-top: 120px;
+}
+.iphoneIncreasing i.fa.fa-times {
+    color: #ff0000ab !important;
+    font-size: 39px;
+    margin-top: -13px;
+}
+
+.phoneCassing{
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px 0px #ddd;
+    margin-top: 60px;
+}
