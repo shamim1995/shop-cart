@@ -41,3 +41,7 @@ h2.phonePrice {
     box-shadow: 0px 0px 5px 0px #ddd;
     margin-top: 60px;
 }
+div#shopTotalSection {
+    margin-left: 78%;
+    color: #fff;
+}

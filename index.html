@@ -30,10 +30,11 @@
                     </div>
                     <div class="col-md-3">
                         <div class="iphoneIncreasing">
-                            <i id ="dcreasing" class="fa fa-minus    "></i>
-                            <input id="iphoneNumber" type="text" class="form-control text-center phoneQunatity" value="1">
-                            <i id ="increasing" class="fa fa-plus-square" aria-hidden="true"></i>
-                            <h2 class="phonePrice text-white">$ <span id="phoneAmount"> 1200</span></h2>
+                            <i onclick="calculateShipping('#phone', false);" class="fa fa-minus "></i>
+                            <input id="phone-number" type="text" class="form-control text-center phoneQunatity" value="1">
+                            <i onclick="calculateShipping('#phone',true);" class="fa fa-plus-square"
+                                aria-hidden="true"></i>
+                            <h2 class="phonePrice text-white">$<span id="phone-price">1200</span></h2>
                             <i id="closeBtn" class="fa fa-times" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -54,15 +55,29 @@
                     </div>
                     <div class="col-md-3">
                         <div class="iphoneIncreasing">
-                            <i class="fa fa-minus    "></i>
-                            <input id="" type="text" class="form-control text-center phoneQunatity" value="1">
-                            <i class="fa fa-plus-square" aria-hidden="true"></i>
-                            <h2 class="phonePrice text-white">$59</h2>
+                            <i onclick="calculateShipping('#cover',false);" class="fa fa-minus"></i>
+                            <input id="cover-number" type="text" class="form-control text-center phoneQunatity" value="1">
+                            <i onclick="calculateShipping('#cover', true);" class="fa fa-plus-square"
+                                aria-hidden="true"></i>
+                            <h2 class="phonePrice text-white">$<span id="cover-price">59</span></h2>
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                     </div>
 
 
+                </div>
+            </div>
+            
+            <div class="row"> 
+                <div class="col-md-8"> 
+                <h2>sub Total:</h2>
+                <h2>Tax:</h2>
+                <h2>Total:</h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2>$<span id="sub-total">1259</span></h2>
+                    <h2 id="tax">$0</h2>
+                    <h2 id="shop-total">$1259</h2>
                 </div>
             </div>
         </div>
