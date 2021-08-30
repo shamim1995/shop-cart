@@ -26,10 +26,8 @@ function calculateShipping(product, isIncrease) {
 };
 
 function shopTotal() {
-    let phonePrice= document.querySelector("#phone-number");
-    let addPhonePrice=parseInt(phonePrice.value);
-    let coverPrice= document.querySelector("#cover-number");
-    let addCoverPrice=parseInt(coverPrice.value);
+    let addPhonePrice = getInto("#phone");
+    let addCoverPrice= getInto("#cover");
     let totalAmount= addPhonePrice *1200+ addCoverPrice*59;
     let taxAmount= totalAmount*0.1
     let result = taxAmount+totalAmount;
@@ -39,6 +37,11 @@ function shopTotal() {
     document.querySelector('#shop-total').innerText =Math.round(result);
 
 };
+function getInto(product) {
+    let coverPrice = document.querySelector(product+"-number");
+    let addCoverPrice = parseInt(coverPrice.value);
+    return addCoverPrice;
+}
 
 
 // let increasingBtn = document.querySelector("#increasing");

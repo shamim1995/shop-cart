@@ -45,3 +45,12 @@ div#shopTotalSection {
     margin-left: 78%;
     color: #fff;
 }
+.totalSection {
+    margin-left: 50px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.dollarSection {
+    margin-left: 102px;
+    color: #fff;
+}
